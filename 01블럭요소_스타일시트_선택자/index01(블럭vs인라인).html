@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭 vs 인라인</title>
+</head>
+<body>
+    <!-- 
+        주석 : (alt + shift + a) or (ctrl + /)
+        html 요소는 블럭과 인라인 요소로 나뉜다.
+        
+        블럭요소
+        1. 블럭요소는 블럭의 크기와 줄바꿈
+        2. 블럭요소 안에는 블럭요소를 자식으로 가질 수 있다.
+
+     -->
+    <h1>블럭요소 h태그</h1>
+    <p>블럭요소 p태그</p>
+    <div>블럭요소 div태그</div>
+    <ul>
+        <li>블럭요소 ul태그</li>
+        <li>블럭요소 li태그</li>
+    </ul>
+    <section>블럭요소</section>
+    <aside>블럭요소</aside>
+    <form>
+        블럭요소
+    </form>
+
+    <hr>
+
+    <!-- 
+        인라인 요소
+        1. 인라인 요소는 줄바꿈이 없다.(한줄로 출력)
+        2. 인라인 요소에는 블럭요소가 들어갈 수 없다. 인라인 요소만 들어갈 수 있다.
+    -->
+    <a>인라인 a태그</a>
+    <img alt="인라인 img태그">
+    <b>인라인 b태그</b>
+    <strong>인라인 strong태그</strong>
+    <span>인라인 span태그</span>
+    <label>이름쓰는곳 인라인 label 태그</label>
+    <input value="인라인 input태그">
+
+    <!-- 잘못 쓴 태그의 형태 -->
+    <a><div>sdf</div></a>
+    <ul>
+        <!-- <a><li>인라인태그 안에 블럭요소는 넣을 수 없다</li></a> -->
+    </ul>
+
+</body>
+</html>

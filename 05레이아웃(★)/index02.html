@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .list{
+            width:80.0000%;
+            margin:0 auto;
+            border:1px solid;
+            overflow: hidden;
+        }
+        .list .inner{
+            border:1px solid;
+            float:left;
+            width:25%;
+            box-sizing: border-box;
+        }
+        .inner .content{
+            overflow: hidden;
+        }
+        .left{
+            float:left;
+        }
+        .right{
+            float:right;
+        }
+        .left span{
+            display:block;
+        }
+        .clear{
+            clear:both; /* 플롯의 영향을 받는 상자의 해제 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <div class="inner">
+            <img src="img/bgimg.png" alt="물괴기이니라">
+            <div class="content">
+                <div class="left">
+                    <span>좌측</span><!-- display:block으로 요소배치 변경-->
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <div class="right">우측</div>
+                <div class="clear">와아아아아</div><!-- clear:both로 float의 영향을 해제-->
+            </div>
+        </div>
+        <div class="inner"><img src="img/bgimg.png" alt="물괴기이니라"></div>
+        <div class="inner"><img src="img/bgimg.png" alt="물괴기이니라"></div>
+        <div class="inner"><img src="img/bgimg.png" alt="물괴기이니라"></div>
+    </div>
+
+    <hr>
+    <h4><a href="index00.html">index00</a></h4>
+
+</body>
+</html>

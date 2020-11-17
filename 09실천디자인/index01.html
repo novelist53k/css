@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 개인디자인 추가 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style type="text/css">
+      
+    </style>
+
+</head>
+<body>
+    <!-- 1. 개발자 도구에서 디자인 속성을 확인하고 nav-inverse -->
+ 
+
+    <header class="my-header">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30px;" alt=""></a>    <!-- 로고 영역 -->
+              </div>
+
+
+
+
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- 메뉴 작성 부분 -->
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Page 1</a></li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                </ul>
+
+                <!-- 우측 메뉴 부분 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- 검색 부분 -->
+                <form class="navbar-form navbar-right" action="##">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button class="btn btn-primary" type="submit">
+                        검색
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 배너영역 -->
+    <!-- bs.js jquery.js가 반드시 필요 -->
+    <!-- header와 겹치지 않도록 margin처리 -->
+    <section class="my-banner">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="">
+              <img src="img/slide01.jpg" alt="슬라이드1">
+            </a>
+          </div>
+      
+          <div class="item">
+            <a href="#">
+            <img src="img/slide02.jpg" alt="슬라이드2">
+            </a>
+          </div>
+      
+          <div class="item">
+            <a href="#">
+              <img src="img/slide03.jpg" alt="슬라이드3">
+            </a>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 본문 -->
+    <section>
+      <div class="container">
+
+        <h2>오늘의 발견 <small>쿠팡이 엄선하지 않은 상품</small></h2>
+
+        <div class="row"> <!-- row 내부 영역 어디든 col 사용 가능-->
+          <ul class="col-xs-12 prod-list">
+            <li class="col-sm-6">
+              <a class="prod-box" href="#">
+                <img src="img/box1.jpg" alt="">
+                <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6">
+              <a class="prod-box" href="#">
+                <img src="img/box2.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box3.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box4.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box5.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box6.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-12 col-md-6">
+              <a class="prod-box" href="#">
+                <img src="img/box7.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box8.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+            <li class="col-sm-6 col-md-3 ">
+              <a class="prod-box" href="#">
+                <img src="img/box9.jpg" alt=""><span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <hr>
+    <h4><a href="index00.html">index00</a></h4>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-copyright">
+              <a href="#"><img src="img/logo.svg" width="20" alt=""></a>
+              Coding404 | 대표자 : 휴우먼 | E-MAIL : human0817@gmail.com<br>
+              개인정보보호책임자 : 휴우먼 | KG-ITbank에서 오프라인 강의를 진행합니다<br>
+              주소 : 서울시 강남구<br>
+              <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <ul class="footer-menu">
+              <li><a href="#">유용한정보</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+</body>
+</html>
